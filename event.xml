@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<settings>
+	<end_date>2014-12-24 18:00</end_date><!-- indicate here when countdown should end, e.g. 2014-12-24 18:00 (YYYY-MM-DD hh:mm) -->
+<!-- countdown-ticker -->
+	<countdown_frame>
+		<posn>76.7 68.1 0</posn>
+		<scale>0.6</scale>
+		
+		<days_label>
+			<text>$o$f00Days</text>
+			<posn>5 0 0</posn>
+			<halign>center</halign>
+			<valign>center</valign>
+		</days_label>
+		<days_value_label>
+			<posn>5 -4 0</posn>
+			<halign>center</halign>
+			<valign>center</valign>
+		</days_value_label>
+		
+		<hours_label>
+			<text>$o$f00Hours</text>
+			<posn>27 0 0</posn>
+			<halign>center</halign>
+			<valign>center</valign>
+		</hours_label>
+		<hours_value_label>
+			<posn>27 -4 0</posn>
+			<halign>center</halign>
+			<valign>center</valign>
+		</hours_value_label>		
+		
+		<minutes_label>
+			<text>$o$f00Minutes</text>
+			<posn>53 0 0</posn>
+			<halign>center</halign>
+			<valign>center</valign>
+		</minutes_label>
+		<minutes_value_label>
+			<posn>53 -4 0</posn>
+			<halign>center</halign>
+			<valign>center</valign>
+		</minutes_value_label>				
+	</countdown_frame>
+<!-- event-picture -->	
+	<picture_frame>
+		<posn>95 76.4 0</posn>
+		<scale>0.9</scale>
+		<picture_quad>
+			<sizen>50 30</sizen>
+			<image>http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/WLE_Austria_Logo_%28no_text%29.svg/50px-WLE_Austria_Logo_%28no_text%29.svg.png</image><!-- link to picture, that should be shown e.g. http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/WLE_Austria_Logo_%28no_text%29.svg/50px-WLE_Austria_Logo_%28no_text%29.svg.png -->
+			<halign>center</halign>
+			<valign>center</valign>
+		</picture_quad>
+		<hover_label>
+			<sizen>50 30</sizen>
+			<url>http://de.wikipedia.org</url><!-- online-page to which it should lead when clicked e.g. http://de.wikipedia.org -->
+			<halign>center</halign>
+			<valign>center</valign>
+			<focusareacolor1>0000</focusareacolor1>
+			<focusareacolor2>08F5</focusareacolor2>
+		</hover_label>
+	</picture_frame>
+</settings>
