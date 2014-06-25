@@ -1,7 +1,7 @@
 <?php
 /*****************************************************************************************
 plugin event.php
-shows 
+shows an event-picture with countdown
 
 @author doe-eye alias d4u alias aca78
 inspired by already existing plugins (e.g. countdown widget)
