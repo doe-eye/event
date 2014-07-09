@@ -3,7 +3,8 @@
 plugin event.php
 shows an event-picture with countdown
 
-@author doe-eye alias d4u alias aca78
+@version 1.1
+@author aca
 inspired by already existing plugins (e.g. countdown widget)
 
 ******************************************************************************************/ 
@@ -18,31 +19,31 @@ Aseco::registerEvent('onPlayerConnect', 'countdown_connect');
 
 global $eventCountdown;
 
-function countdown_startup($aseco, $command) {
+function countdown_startup($aseco) {
     global $eventCountdown;
     $eventCountdown = new EventCountdown($aseco);
 }
 
-function countdown_update($aseco, $command) {
+function countdown_update($aseco) {
     global $eventCountdown;
     $eventCountdown->updateTime();
 }
 
-function countdown_ready($aseco, $command) {
+function countdown_ready($aseco) {
     global $eventCountdown;
     $eventCountdown->updateCountdown();
 	$eventCountdown->showWidget();
 	
 }
 
-function countdown_endMap($aseco, $command) {
+function countdown_endMap($aseco, $map) {
     global $eventCountdown;
     $eventCountdown->setShow(false);
     $eventCountdown->hideWidget();
 	
 }
 
-function countdown_beginMap($aseco, $command) {
+function countdown_beginMap($aseco, $map) {
     global $eventCountdown;
     $eventCountdown->setShow(true);
     $eventCountdown->updateCountdown();
@@ -50,7 +51,7 @@ function countdown_beginMap($aseco, $command) {
 
 }
 
-function countdown_connect($aseco, $command) {
+function countdown_connect($aseco, $player) {
     global $eventCountdown;
     $eventCountdown->updateCountdown();
 	$eventCountdown->showWidget();
