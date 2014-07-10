@@ -1,11 +1,11 @@
 <?php
 /*****************************************************************************************
-plugin event.php
+plugin.event.php
 shows an event-picture with countdown
 
-@version 1.1
+@version 1.2
 @author aca
-inspired by already existing plugins (e.g. countdown widget)
+inspired by already existing plugins (e.g. countdown widget) and "stolen" from them
 
 ******************************************************************************************/ 
 Aseco::registerEvent('onStartup', 'countdown_startup');
@@ -218,7 +218,7 @@ XML;
     }
 	
 	function showWidget(){
-		$xml = '<manialink id="2460983406" version="1">';
+		$xml = '<manialink id="23017820" version="1">';
 		if($this->enabled){
 			$xml .= $this->cdXML;
 		}
@@ -233,7 +233,7 @@ XML;
 	
     function hideWidget() {
         $xml = <<<XML
-        <manialink id="2460983406" version="1">
+        <manialink id="23017820" version="1">
 		
 		</manialink>
 XML;
